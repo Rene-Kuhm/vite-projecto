@@ -41,12 +41,12 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="bg-primary">
+        <nav className="fixed top-0 left-0 bg-purple-900 w-full bg-opacity-30 backdrop-blur-md z-50">
             <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
                 <img src={Logo} alt="Logo" className='w-[100px]' />
 
                 {/* Boton hamburguesa */}
-                <button onClick={toggleMenu} className='text-white'>
+                <button onClick={toggleMenu} className='text-white md:hidden'>
                     <svg
                         className='w-6 h-6'
                         fill='none'
